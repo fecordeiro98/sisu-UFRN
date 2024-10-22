@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+html, select, input, button {
+    font-family: 'Lato', sans-serif;
+    font-size: 12pt;
+    background-color: #0095db;
+}
+select {
+    border: 1px solid #164194; border-radius: 5px;
+    padding: 3px;
+}
+table {
+    width: 240px;
+    border: 1px solid #164194; border-radius: 10px;
+    padding: 5px;
+}
+table td:not(:last-child) {
+    width: 130px;
+}
+input {
+    width: 80px;
+    border: 1px solid #164194; border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+}
+button {
+    border: 1px solid #164194; border-radius: 5px;
+    padding: 5px;
+    background-color: #164194;
+    color: white;
+}
+footer {
+    margin-top: 12pt;
+    border: 3px double #164194; border-radius: 10px;
+    padding: 5px;
+    width: 485px;
+    text-align: center;
+}
+
+#selecao {
+    margin-bottom: 5px;
+}
+#italico {
+    font-style: italic;
+    font-size: 10pt;
+    color: darkred;
+}
+#botao {
+    width: 240px;
+    margin: 5px 0;
+    text-align: center;
+}

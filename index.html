@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Média do SISU para a UFRN</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <main>
+        <div id="selecao">
+            <label for="curso">Selecione o curso*:</label>
+            <select name="" id="curso">
+                <option value="">Selecione</option>
+                <option value="admin">Administração</option>
+                <option value="admpu">Administração pública</option>
+                <option value="adsis">Análise e desenvolvimento de sistemas</option>
+                <option value="arqur">Arquitetura e urbanismo</option>
+                <option value="artvi">Artes visuais</option>
+                <option value="bibli">Biblioteconomia</option>
+                <option value="biome">Biomedicina</option>
+                <option value="ccomp">Ciência da computação</option>
+                <option value="catua">Ciências atuariais</option>
+                <option value="cbiol">Ciências biológicas</option>
+                <option value="ccont">Ciências contábeis</option>
+                <option value="cecon">Ciências econômicas</option>
+                <option value="csoci">Ciências sociais</option>
+                <option value="audio">Comunicação social - Audiovisual</option>
+                <option value="pubpr">Comunicação social - Publicidade e propaganda</option>
+                <option value="desig">Design</option>
+                <option value="direi">Direito</option>
+                <option value="ecolo">Ecologia</option>
+                <option value="edufi">Educação física</option>
+                <option value="enfer">Enfermagem</option>
+                <option value="eagro">Engenharia agronômica</option>
+                <option value="eambi">Engenharia ambiental</option>
+                <option value="ebiom">Engenharia biomédica</option>
+                <option value="ecivi">Engenharia civil</option>
+                <option value="ecomp">Engenharia da computação</option>
+                <option value="ealim">Engenharia de alimentos</option>
+                <option value="eaqui">Engenharia de aquicultura</option>
+                <option value="emate">Engenharia de materiais</option>
+                <option value="epetr">Engenharia de petróleo</option>
+                <option value="eprod">Engenharia de produção</option>
+                <option value="etele">Engenharia de telecomunicações</option>
+                <option value="eelet">Engenharia elétrica</option>
+                <option value="eflor">Engenharia florestal</option>
+                <option value="emecn">Engenharia mecânica</option>
+                <option value="emect">Engenharia mecatrônica</option>
+                <option value="equim">Engenharia química</option>
+                <option value="etext">Engenharia têxtil</option>
+                <option value="estat">Estatística</option>
+                <option value="farma">Farmácia</option>
+                <option value="filos">Filosofia</option>
+                <option value="fisic">Física</option>
+                <option value="fisio">Fisioterapia</option>
+                <option value="fonoa">Fonoaudiologia</option>
+                <option value="geofi">Geofísica</option>
+                <option value="geogr">Geografia</option>
+                <option value="geolo">Geologia</option>
+                <option value="gpopu">Gestão de políticas públicas</option>
+                <option value="gehos">Gestão hospitalar</option>
+                <option value="histo">História</option>
+                <option value="ciete">Interdisciplinar em ciência e tecnologia</option>
+                <option value="human">Interdisciplinar em humanidades</option>
+                <option value="jorna">Jornalismo</option>
+                <option value="espan">Letras - Espanhol</option>
+                <option value="franc">Letras - Francês</option>
+                <option value="ingle">Letras - Inglês</option>
+                <option value="portu">Letras - Português</option>
+                <option value="porin">Letras - Português e inglês</option>
+                <option value="matem">Matemática</option>
+                <option value="medic">Medicina</option>
+                <option value="meteo">Meteorologia</option>
+                <option value="nutri">Nutrição</option>
+                <option value="odont">Odontologia</option>
+                <option value="pedag">Pedagogia</option>
+                <option value="psico">Psicologia</option>
+                <option value="quimi">Química</option>
+                <option value="qpetr">Química do petróleo</option>
+                <option value="relin">Relações internacionais</option>
+                <option value="scole">Saúde coletiva</option>
+                <option value="serso">Serviço social</option>
+                <option value="sisin">Sistemas de informação</option>
+                <option value="teatr">Teatro</option>
+                <option value="tecin">Tecnologia da informação</option>
+                <option value="turis">Turismo</option>
+                <option value="zoote">Zootecnia</option>
+            </select><br>
+            <span id="italico">*Contém todos os cursos de todos os campi da UFRN (Natal, Caicó, Currais Novos e Macaíba)</span>
+        </div>
+        <div> <!-- Tabelas e botão -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Área</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ciências humanas</td>
+                        <td><input type="number" name="" id="chu" min="0" max="1000" step="0.1"></td>
+                    </tr>
+                    <tr>
+                        <td>Ciências naturais</td>
+                        <td><input type="number" name="" id="cna" min="0" max="1000" step="0.1"></td>
+                    </tr>
+                    <tr>
+                        <td>Linguagens</td>
+                        <td><input type="number" name="" id="lin" min="0" max="1000" step="0.1"></td>
+                    </tr>
+                    <tr>
+                        <td>Matemática</td>
+                        <td><input type="number" name="" id="mat" min="0" max="1000" step="0.1"></td>
+                    </tr>
+                    <tr>
+                        <td>Redação</td>
+                        <td><input type="number" name="" id="red" min="0" max="1000" step="10"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="botao">
+                <button onclick="calcular()">Calcular</button>
+            </div>
+            <table>
+                <tr>
+                    <td>Média do ENEM</td>
+                    <td><input type="number" name="" id="men" disabled></td>
+                </tr>
+                <tr>
+                    <td>Média do curso</td>
+                    <td><input type="number" name="" id="mcu" disabled></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <span>&copy; Felipe Cordeiro</span><br>
+        <span>Outubro de 2024</span><br>
+        <span>v 1.0</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
