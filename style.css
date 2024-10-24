@@ -5,6 +5,13 @@ html, select, input, button {
     font-size: 12pt;
     background-color: #0095db;
 }
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 select {
     border: 1px solid #164194; border-radius: 5px;
     padding: 3px;
@@ -44,6 +51,12 @@ footer {
     font-style: italic;
     font-size: 10pt;
     color: darkred;
+}
+#central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 }
 #botao {
     width: 240px;
