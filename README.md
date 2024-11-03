@@ -19,18 +19,4 @@ Este código HTML e JavaScript tem como objetivo principal auxiliar estudantes a
     * Calcula a média ponderada específica para cada curso, considerando os pesos atribuídos a cada área do ENEM (detalhes dos pesos não foram fornecidos no código apresentado).
 * **Exibição dos Resultados:** Os resultados dos cálculos são exibidos em campos de texto pré-formatados na página.
 
-### Potencialidades e Melhorias
-* **Personalização:** A ferramenta pode ser personalizada para outras universidades, bastando ajustar a lista de cursos e os pesos utilizados no cálculo das médias.
-* **Funcionalidades Adicionais:**
-    * **Comparação com Notas de Corte:** Comparar a média calculada com as notas de corte históricas dos cursos, fornecendo uma estimativa de chance de aprovação.
-    * **Gráficos:** Visualizar os resultados em gráficos para facilitar a compreensão.
-    * **Salvamento de Dados:** Permitir que o usuário salve seus cálculos para consulta posterior.
-* **Melhorias na Interface:**
-    * **Feedback ao Usuário:** Fornecer feedback visual ou textual durante o cálculo, como um indicador de carregamento ou uma mensagem de confirmação.
-    * **Validação de Dados:** Implementar validação para garantir que os dados inseridos pelo usuário sejam válidos (por exemplo, que as notas estejam dentro do intervalo permitido).
-    * **Acessibilidade:** Garantir que a ferramenta seja acessível a pessoas com deficiência, seguindo as diretrizes de acessibilidade web.
-
-### Considerações Finais
-Este código demonstra uma aplicação prática de HTML e JavaScript para criar uma ferramenta útil para estudantes. Com algumas adaptações e melhorias, ele pode se tornar ainda mais completo e eficiente.
-
 Texto gerado por inteligência artificial
