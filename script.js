@@ -74,7 +74,10 @@ function valoresMinimos() {
             const nota = parseFloat(elemento.value) || 0;
 
             if (nota < materia.corte) {
+                elemento.style.color = 'red';
                 alert(`Infelizmente a nota de ${materia.nome} está abaixo da nota de corte (${materia.corte})`);
+            } else {
+                elemento.style.color = 'black';
             }
         } else {
             console.warn(`Elemento com ID "${materia.id}" não encontrado no HTML`);
