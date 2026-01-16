@@ -111,5 +111,12 @@
       "matem": 3,
       "redac": 1.5
    }
-  }
+  },
+  "materias": [
+    {"id": "red", "nome": "Redação", "corte": 500},
+    {"id": "chu", "nome": "Ciências Humanas", "corte": 450},
+    {"id": "cna", "nome": "Ciências Naturais", "corte": 450},
+    {"id": "lin", "nome": "Linguagens", "corte": 450},
+    {"id": "mat", "nome": "Matemática", "corte": 450}
+  ]
 }

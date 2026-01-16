@@ -1,5 +1,6 @@
 let curso;
 let area;
+let corte;
 
 fetch('dados.json')
     .then(response => {
@@ -11,7 +12,7 @@ fetch('dados.json')
     .then(dadosJson => {
         curso = dadosJson.curso;
         area = dadosJson.area;
-
+        corte = dadosJson.materias;
         console.log('Dados JSON carregados com sucesso!');
     })
     .catch(error => {
@@ -60,7 +61,29 @@ function mediaPesos() {
     document.getElementById('mcu').value = media.toFixed(2);
 }
 
+function valoresMinimos() {
+    if (!corte) {
+        console.error('Os dados JSON não foram carregados');
+        return;
+    }
+
+    corte.forEach(materia => {
+        const elemento = document.getElementById(materia.id);
+        
+        if (elemento) {
+            const nota = parseFloat(elemento.value) || 0;
+
+            if (nota < materia.corte) {
+                alert(`Infelizmente a nota de ${materia.nome} está abaixo da nota de corte (${materia.corte})`);
+            }
+        } else {
+            console.warn(`Elemento com ID "${materia.id}" não encontrado no HTML`);
+        }
+    });
+}
+
 function calcular() {
     mediaEnem();
     mediaPesos();
+    valoresMinimos();
 }
