@@ -58,6 +58,9 @@ footer {
     align-items: center;
     margin: 0 auto;
 }
+#notas {
+    width: 350px;
+}
 #botao {
     width: 240px;
     margin: 5px 0;
